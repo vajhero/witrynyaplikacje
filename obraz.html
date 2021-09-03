@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function okno_zamknij_karczewski() {
+				window.close()
+			}
+		</script>
+		</head>
+	<body>
+		Uwagi na temat JS
+		<ul>
+			<li>
+				JavaScript powstał 1995 roku.
+			</li>
+			<li>
+				Jest językiem skryptowym (interpretowanym), ponieważ nie musi zostać skompilowany do kodu maszynowego,
+				aby można było zobaczyć efekty jego działania. 
+			</li>
+			<li>
+				Jest wykonywany po stronie klienta.
+			</li>
+			<li>
+				JavaScript jest bezpiecznym narzędziem, ponieważ ma znacznie ograniczone uprawnienia dostępu do zasobów
+				komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów
+				wykonywane są w trakcie wykonywania programu.
+			</li>
+			<li>
+				Język JavaScript jest językiem obiektowym, język potrafi niejawnie stworzyć obiekt z danej funkcji.
+			</li>
+		</ul>
+		Wytłumaczenie kodu
+		<ul>
+			<li>
+				&ltinput type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&gt - przycisk, który otwiera nowe okno przegladarki
+			</li>
+			<li>
+				window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); - skrypt, który otwiera nowe okno przeglądarki
+			</li>
+			<li>
+				toolbar=no - usuwa pasek narzędzi
+			</li>
+			<li>
+				directories=no - usuwa przyciski katalogów
+			</li>
+			<li>
+				menubar=no - usuwa menu przeglądarki
+			</li>
+			<li>
+				menubar=no - usuwa menu przeglądarki
+			</li>
+			<li>
+				height=280 - ustawia wysokość strony 
+			</li>
+			<li>
+				width=160 - ustawia szerokość strony
+			</li>
+			<li>
+				top=200 - ustawia odległość od górnej krawędzi strony
+			</li>
+			<li>
+				left=200 - ustawia odległość od lewej krawędzi strony
+			</li>
+			<li>
+				window.close() - zamyka okno przeglądarki
+			</li>
+		</ul>
+		<br>
+		<img src="obraz1.gif"/>
+		<br>
+		<input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()"/>
+	</body>
+</html>
