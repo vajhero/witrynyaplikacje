@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Przykład nr 1</title>
+    <script language="JavaScript">
+        function WinOpen_karczewski() {
+            window.open("obraz.html", "okienko", "toolbar=no,directories=yes,menubar=no,height=960,width=1280,top=100,left=200");
+        }
+
+        function okno_zamknij_karczewski() {
+            window.close();
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_karczewski(' ')">
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()">
+    </form>
+</body>
+
+</html>

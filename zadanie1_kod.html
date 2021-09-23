@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close();
+        }
+    </script>
+    <title>Zadanie 1 - kod</title>
+</head>
+
+<body>
+    <textarea cols="100" rows="25">
+    <html>
+        <head>
+            <title>Przykład nr 1</title>
+            <script language="JavaScript">
+                function WinOpen_karczewski() {
+                window.open("obraz.html","okienko","toolbar=no,directories=yes,menubar=no,height=960,width=1280,top=100,left=200");
+                function okno_zamknij_karczewski() {
+                    window.close();
+                }
+            }
+            </script>
+        </head>
+        <body>
+            <form>
+                <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_karczewski(' ')">
+                <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()">
+            </form>
+        </body>
+    </html>
+    </textarea>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()">
+
+</body>
+
+</html>
