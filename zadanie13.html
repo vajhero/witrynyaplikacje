@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 13</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <div style="color:navy; font-size: 50px;">
+        <script language="JavaScript">
+            var liczba1=prompt("Liczba 1 =","");
+            var liczba2=prompt("Liczba 2 =","");
+            var a=parseFloat(liczba1);
+            var b=parseFloat(liczba2);
+            var x1 = (a**3);
+            var x2 = (3*((a**2)*b));
+            var x3 = (3*(a*(b**2)));
+            var x4 = (b**3)
+            var x = (x1 + x2 + x3 + x4);
+            document.write("wczytane liczby:ㅤㅤㅤA:" +a+ "ㅤㅤㅤ" + "B:"+b+ "<br>");
+            document.write("(" + a + " + " + b + ") ^ 3 = " + a+" ^ 3 "+ " + " + " 3 * "+ "(( " +a+"^2 ) * ("+b+")"+" + "+"3 ("+a+"("+b+" ^ 2 ))"+ " + " + b +" ^ 3  = "+ x1+ " + " + x2 + " + " + x3 + " + " + x4 + " = " + x);
+        </script>
+    </div>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>

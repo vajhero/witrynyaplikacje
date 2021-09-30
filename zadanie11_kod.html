@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 11 - kod</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <textarea cols="150" rows="25">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 11</title>
+</head>
+<body>
+    <div style="color:navy; font-size:100px;">
+        <script language="JavaScript">
+            var wartosc = prompt("Liczba =");
+            var m_kar = parseFloat(wartosc);
+            var b = m_kar + 2;      
+            document.write("m = " + m_kar + "<br>");
+            document.write("1/" + m_kar + " = " + "1/" + b + " + " + "1/" + (m_kar + 2) * 7 + " + " + "1/" + m_kar * 5);         
+        </script>
+    </div>  
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>

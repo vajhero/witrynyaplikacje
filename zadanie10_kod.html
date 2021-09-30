@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 10 - kod</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <textarea cols="100" rows="30">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 10</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <div style="color:navy; font-size:100px;">
+        <script language="JavaScript">
+            var wartosc = prompt("m =","");
+            var m_kar = parseFloat(wartosc);
+            document.write("1/" + m_kar + " = 1/" + (m_kar+1) + " + " + "1/" + m_kar * (m_kar + 1));
+        </script>
+    </div>
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>

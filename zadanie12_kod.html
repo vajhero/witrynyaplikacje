@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 12 - kod</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <textarea  cols="150" rows="30">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 12</title>
+</head>
+<body>
+    <div style="color:navy; font-size:100px;">
+        <script language="JavaScript">
+            var wartosc1 = prompt("Liczba 1 =");
+            var wartosc2 = prompt("Liczba 2 =");
+            var m_kar = parseFloat(wartosc1);
+            var m_kar2 = parseFloat(wartosc2);
+            document.write("m=" + m_kar + "<br>");
+            document.write("1/" + m_kar + "=" + "1/" + (m_kar * 2) + "+" + "1/" + (m_kar * 2)+ "<br>");
+            document.write("m=" + m_kar2 + "<br>");
+            document.write("1/" + m_kar2 + "=" + "1/" + (m_kar2 * 2) + "+" + "1/" + (m_kar2 * 2));
+        </script>
+    </div>
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>
