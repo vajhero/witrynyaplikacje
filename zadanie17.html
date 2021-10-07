@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 17</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <div style="color: navy; font-size:50px;">
+        <script language="JavaScript">
+            var a=parseFloat(prompt("a=","")); 
+            var b=parseFloat(prompt("b=","")); 
+            function suma_kar(a, b) { 
+                return a + b; 
+            }
+            function odejmowanie_kar(a, b) { 
+                return a - b; 
+            } 
+            function mnozenie_kar(a, b) { 
+                return a * b; 
+            } 
+            function do_kwadratu_kar(a, b) { 
+                return (a*a); 
+            } 
+            function do_kwadratu_kar2(a,b) {
+                return (b*b);
+            }
+            function reszta_z_dzielenia_a_przez_b_kar (a,b) {
+                return (a%b);
+            }
+
+            document.write("suma="+suma_kar(a,b)+"<br>");  
+            document.write("odejmowanie="+odejmowanie_kar(a,b)+"<br>");   
+            document.write("mnozenie="+mnozenie_kar(a,b)+"<br>");   
+            document.write("do kwadratu="+do_kwadratu_kar(a,b)+"<br>"+do_kwadratu_kar2(a,b)+"<br>");
+            document.write("reszta z dzielenia="+reszta_z_dzielenia_a_przez_b_kar(a,b)+"<br>");   
+        </script>
+    </div>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body> 
+</html>

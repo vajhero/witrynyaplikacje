@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>
+    Zadanie 19
+</title>
+<script language="JavaScript">
+    function okno_zamknij_karczewski() {
+    window.close()
+    }
+    function pole_karczewski(a_kar, b_kar) {
+        a_liczba=parseFloat(a_kar)
+        b_liczba=parseFloat(b_kar)
+        pole_wynik = a_liczba*b_liczba;
+        document.getElementsByName('pole')[0].value=pole_wynik.toFixed(2); /* na dokument */
+        alert("Pole="+pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+        wyprowadz_pole_kar.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>";  /* do tabeli */
+    }
+    function obwod_karczewski(a_kar, b_kar) {
+        a_liczba=parseFloat(a_kar)
+        b_liczba=parseFloat(b_kar)
+        obwod_wynik = (a_liczba * 2) + (b_liczba * 2);
+        document.getElementsByName('obw')[0].value=obwod_wynik.toFixed(2);
+        alert("Obwód="+obwod_wynik.toFixed(2)+" cm");
+        wyprowadz_obwod_kar.innerHTML="Obwód="+obwod_wynik.toFixed(2)+"cm";
+    }
+</script>
+</head>
+<body>
+    Obliczanie pola i obwodu prostokąta
+    <br> <br>
+    <form name="formularz" action="..." onsubmit="pole_karczewski(this.a_dana_kar.value,this.b_dana_kar.value); obwod_karczewski(this.a_dana_kar.value,this.b_dana_kar.value);return false">
+    Podaj a =
+    <input size="6" name="a_dana_kar">
+    Podaj b =
+    <input size="6" name="b_dana_kar">
+    <br>
+    <br>
+    <input TYPE="submit" Value="oblicz" >
+    <br>
+    <br>
+    Pole=
+    <input size="6" name="pole">
+    Obwód=
+    <input size="6" name="obw">
+    </form>
+    <table>
+        <tr id="wyprowadz_pole_kar"></tr>
+        <tr id="wyprowadz_obwod_kar"></tr>
+    </table>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>
