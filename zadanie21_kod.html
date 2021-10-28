@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 21 - kod</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <textarea cols="100" rows="60">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 21</title>
+    <script language="JavaScript">
+        function okno_zamknij_karczewski() {
+            window.close();
+        }
+        function drabina_karczewski(d_kar, x_kar) {
+            d_liczba = parseFloat(d_kar);
+            x_liczba = parseFloat(x_kar);
+            l_wynik = Math.sqrt ((d_liczba * d_liczba) + (x_liczba * x_liczba));
+            document.getElementsByName('dlugosc')[0].value=l_wynik.toFixed(2); /* na dokument */
+            alert("Dlugość="+l_wynik.toFixed(2)+" cm"); /*do okna Alert */
+            wyprowadz_l_kar.innerHTML="Długość="+l_wynik.toFixed(2)+"cm";
+        }
+        function alfa_karczewski (d_kar, x_kar) {
+            d_liczba = parseFloat(d_kar);
+            x_liczba = parseFloat(x_kar);
+            alfa_wynik = Math.atan(d_liczba/x_liczba);
+            document.getElementsByName('alfa')[0].value=alfa_wynik.toFixed(2); /* na dokument */
+            alert("Alfa="+alfa_wynik.toFixed(2)+" stopni"); /*do okna Alert */
+            wyprowadz_alfa_kar.innerHTML="Alfa="+alfa_wynik.toFixed(2)+"cm";
+        }
+    </script>
+</head>
+<body>
+    Obliczanie odległości od drabiny i kąta
+    <br>
+    <form name="formularz" action="..." onsubmit="drabina_karczewski(this.d_dana_kar.value,this.x_dana_kar.value);
+    alfa_karczewski(this.d_dana_kar.value,this.x_dana_kar.value);return false">
+    Podaj d=
+        <input size="6" name="d_dana_kar">
+        Podaj x=
+        <input size="6" name="x_dana_kar">
+        <br><br>
+        <input TYPE="submit" Value="oblicz" >
+        Długość=
+        <input size="6" name="dlugosc">
+        Alfa=
+        <input size="6" name="alfa">
+    </form>
+    <table>
+        <tr id="wyprowadz_l_kar"></tr>
+        <tr id="wyprowadz_alfa_kar"></tr>
+    </table>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>
+    </textarea>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>

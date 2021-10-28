@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 15 - kod</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <textarea cols="100" rows="40">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 15</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <div style="color:navy; font-size:35px;">
+        <script language="JavaScript">
+            var liczba1=prompt("Liczba 1 =","");
+            var liczba2=prompt("Liczba 2 =","");
+            var y1_kar = parseFloat(liczba1);
+            var y2_kar = parseFloat(liczba2);    
+            var x1 = parseFloat(3*Math.pow(y1_kar, (6/(6+2))));
+            var x2 = parseFloat(2*Math.cos(y1_kar * Math.PI / 180) + 2*Math.sin(y1_kar * Math.PI / 180));
+            var xa = Math.cbrt(Math.pow(y1_kar,5) + (2 * Math.pow(y2_kar,4)));
+            var xb = Math.abs(y1_kar - y2_kar)
+            var x3 = xa * xb;	
+            document.write("x1 = " + y1_kar + "<br>");
+            document.write("x2 = " + y2_kar + "<br>");
+            document.write("y1 = " + x1 + "<br>");
+            document.write("y2 = " + x2 + "<br>");
+            document.write("y3 = " + x3 + "<br>");
+        </script>
+        </div>
+        <br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>
+    </textarea>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+</html>
