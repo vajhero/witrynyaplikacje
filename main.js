@@ -103,3 +103,6 @@ function WinOpen_karczewski30() {
 function WinOpen_karczewski31() {
     window.open("zadanie23_zew_kod.html");
 }
+function WinOpen_karczewski32() {
+    window.open("zadanie13_kod.html");
+}
