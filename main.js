@@ -71,7 +71,7 @@ function WinOpen_karczewski20() {
     window.open("zadanie13.html");
 }
 function WinOpen_karczewski21() {
-    window.open("zadanie13_kod.html");
+    window.open("zadanie15.html");
 }
 function WinOpen_karczewski22() {
     window.open("zadanie16.html");
