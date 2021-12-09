@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 63</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="color:green">MENU:</h1>
+    <h2 style="color: red">1 - czerwony</h2>
+    <h2 style="color: blue">2 - niebieski</h2>
+    <button id="przycisk">Oblicz</button>
+    <script language="JavaScript">
+        const btn = document.getElementById("przycisk")
+
+        function funkcja() {
+            let liczba = prompt("Podaj liczbę", "")
+            let x = liczba.toLowerCase()
+            if (x == "1" || x == "czerwony") {
+                document.write("<font color=red size=7>wpisałes kolor czerwony</font> <br>")
+            } else if (x == "2" || x == "niebieski") {
+                document.write("<font color=blue size=1>wpisałes kolor niebieski</font> <br>")
+            }
+        }
+
+        btn.addEventListener("click", funkcja)
+    </script>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+
+</html>

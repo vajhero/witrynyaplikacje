@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 72 - kod</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <textarea cols="100" rows="50">
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Zadanie 72</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <script langugage="JavaScript">
+        let powtorka = false;
+        while (!powtorka) {
+            var l1_t_kar = prompt("Podaj pierwszą liczbę")
+            var l2_t_kar = prompt("Podaj drugą liczbę")
+            if (l1_t_kar < 20 || l1_t_kar > 60 || l2_t_kar < 20 || l2_t_kar > 60) {
+                alert("Niestety, liczby nie pasują do przedziału.")
+            } else {
+                alert("Brawo! Liczby pasują do przedziału.")
+                powtorka = true;
+            }
+        }
+        let pocz_kar = prompt("Podaj wielkość początkową.")
+        let tekst_kar = prompt("Podaj tekst.")
+        if (l2_t_kar <= l1_t_kar) {
+            for (let i = pocz_kar; i > 0; i -= 5) {
+                document.write("<p style=\"font-size:" + i + "px; color: black;\"><br>" + tekst_kar + "</p>" + "<br>")
+            }
+        } else {
+            for (let i = pocz_kar; i < 100; i += 5) {
+                document.write("<p style=\"font-size:" + i + "px; color: black;\"><br>" + tekst_kar + "</p>" + "<br>")
+            }
+        }
+    </script>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+
+</html>
+    </textarea><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 70 - kod</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <textarea cols="100" rows="45">
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 70</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <script language="JavaScript">
+            let liczbaA = prompt("Podaj A");
+            let liczbaB = prompt("Podaj B");
+            let a = parseInt(liczbaA);
+            let b = parseInt(liczbaB);
+            let spacja = "\u00a0";
+
+            for (let i = 1; i <= b; i++) {
+                document.write("*");
+            }
+            for (let i = 1; i <= a; i++) {
+                document.write("<br>" + "*" + spacja.repeat(b * 2 - 4) + "*" + "<br>");
+            }
+            for (let i = 1; i <= b; i++) {
+                document.write("*");
+            }
+        </script>
+    </div>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+
+</html>
+    </textarea><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+
+</html>
