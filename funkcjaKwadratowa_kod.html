@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcja Kwadratowa - kod</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <textarea cols="100" rows="100">
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcja Kwadratowa</title>
+    <style>
+        body {
+            color: blue;
+            font-size: 1cm;
+            font-family: sans-serif;
+        }
+    </style>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <script language="JavaScript">
+        let a = prompt("Podaj a", "");
+        let b = prompt("Podaj b", "");
+        let c = prompt("Podaj c", "");
+        let delta = Math.pow(b, 2) - 4 * a * c;
+        let p = -b / 2 * a;
+        let q = -delta / 4 * a;
+        let x1 = (-b - Math.sqrt(delta)) / 2 * a;
+        let x2 = (-b + Math.sqrt(delta)) / 2 * a;
+        let x0 = -b / 2 * a;
+
+        if (a <= 0) {
+            document.write("a musi być większe od 0")
+        } else if (a > 0) {
+            document.write("a = " + a + "<br>");
+            document.write("b = " + b + "<br>");
+            document.write("c = " + c + "<br>");
+            document.write("delta = " + delta + "<br>");
+            document.write("p = " + p.toFixed(2) + "<br>");
+            document.write("q = " + q.toFixed(2) + "<br>");
+            document.write("W(" + p.toFixed(2) + ", " + q.toFixed(2) + ")" + "<br>");
+            document.write("oś symetrii = " + x0 + "<br>")
+            if (delta > 0) {
+                document.write("x1 = " + x1 + "<br>");
+                document.write("x2 = " + x2 + "<br><br>");
+            } else if (delta == 0) {
+                document.write("x0 = " + x0 + "<br><br>");
+            } else if (delta < 0) {
+                document.write("Brak miejsc zerowych <br><br>");
+            }
+
+
+            document.write("Funkcja ogólna: <br>");
+            if (b != 0 && c != 0) {
+                document.write("f(x) = " + a + "x^2" + " + " + b + "x " + "+ " + c + "<br><br>");
+            } else if (b != 0 && c == 0) {
+                document.write("f(x) = " + a + "x^2" + " + " + b + "x <br><br>");
+            } else if (b == 0 && c == 0) {
+                document.write("f(x) = " + a + "x^2 <br><br>");
+            } else if (b == 0 && c != 0) {
+                document.write("f(x) = " + a + "x^2" + " + " + c + "<br><br>");
+            }
+
+            document.write("Funkcja kanoniczna: <br>");
+            if (p != 0 && q != 0) {
+                document.write("f(x) = " + a + "(x - " + p + ")^2 +" + q + "<br><br>");
+            } else if (p != 0 && q == 0) {
+                document.write("f(x) = " + a + "(x - " + p + ")^2" + "<br><br>");
+            } else if (p == 0 && q != 0) {
+                document.write("f(x) = " + a + "x^2 + " + q + "<br><br>");
+            } else if (p == 0 && q == 0) {
+                document.write("f(x) = " + a + "x^2" + "<br><br>");
+            }
+
+            document.write("Funkcja iloczynowa: <br>");
+            if (delta < 0) {
+                document.write("nie istnieje");
+            } else if (delta > 0) {
+                document.write("f(x) = " + a + "(x - " + x1 + ") (x - " + x2 + ")")
+            } else if (delta == 0) {
+                document.write("f(x) = " + a + "(x - " + x0 + ")^2")
+            }
+        }
+    </script>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+
+</html>
+    </textarea>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+
+</html>

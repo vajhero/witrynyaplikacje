@@ -190,6 +190,15 @@ function WinOpen_karczewski77() {
     window.open("zadanie77.html");
 }
 
+function WinOpen_karczewski78() {
+    window.open("zadanie78.html");
+}
+
+
+function WinOpen_karczewskifunkcja() {
+    window.open("funkcjaKwadratowa.html");
+}
+
 function WinOpen_karczewski62_kod() {
     window.open("zadanie62_kod.html");
 }
@@ -252,4 +261,12 @@ function WinOpen_karczewski76_kod() {
 
 function WinOpen_karczewski77_kod() {
     window.open("zadanie77_kod.html");
+}
+
+function WinOpen_karczewski78_kod() {
+    window.open("zadanie78_kod.html");
+}
+
+function WinOpen_karczewskifunkcja_kod() {
+    window.open("funkcjaKwadratowa_kod.html");
 }

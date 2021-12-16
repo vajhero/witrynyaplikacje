@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 78</title>
+    <script>
+        function okno_zamknij_karczewski() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <script language="JavaScript">
+        let liczba1 = prompt("Podaj R", "");
+        let R = parseFloat(liczba1);
+        let licznik_kar = 0;
+        for (let i_kar = -Math.round(R) - 1; i_kar <= Math.round(R) + 1; i_kar++) {
+            for (let j_kar = -Math.round(R); j_kar <= Math.round(R); j_kar++) {
+                let d = Math.sqrt(i_kar * i_kar + j_kar * j_kar);
+                document.write("(" + i_kar + " , " + j_kar + ")" + "   ");
+                if (d <= R) {
+                    licznik_kar++;
+                }
+            }
+            document.write("<br>");
+        }
+        document.write("licznik = " + licznik_kar + "<br>")
+    </script>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_karczewski()" />
+</body>
+
+</html>
